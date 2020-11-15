@@ -6,11 +6,6 @@ Class Basic
 {
     protected $curl;
 
-    public function __destruct()
-    {
-        $this->curl->close();
-    }
-
     public function curl()
     {
         return $this->curl;
