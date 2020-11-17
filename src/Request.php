@@ -199,7 +199,11 @@ Class Request extends \mmaurice\qurl\classes\Basic
             $uri = array_shift($url);
 
             if (!empty($url)) {
-                $uri .= '?' . $this->buildGetData(array_shift($url));
+                $url = array_shift($url);
+
+                if (!empty($url)) {
+                    $uri .= '?' . $this->buildGetData($url);
+                }
             }
         }
 
