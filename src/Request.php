@@ -3,11 +3,12 @@
 namespace mmaurice\qurl;
 
 use \mmaurice\qurl\classes\Curl;
-use \mmaurice\qurl\classes\Storage;
+use \mmaurice\qurl\classes\Headers;
+use \mmaurice\qurl\classes\Body;
 use \mmaurice\qurl\Client;
 use \mmaurice\qurl\Response;
 
-Class Request extends \mmaurice\qurl\classes\Basic
+class Request extends \mmaurice\qurl\classes\Basic
 {
     const GET = 'GET';
     const POST = 'POST';
@@ -29,8 +30,8 @@ Class Request extends \mmaurice\qurl\classes\Basic
     public function __construct(Client $client)
     {
         $this->curl = $client->curl();
-        $this->headers = new Storage;
-        $this->body = new Storage;
+        $this->headers = new Headers;
+        $this->body = new Body;
 
         $this->setUserAgent('Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.8.1.13) Gecko/20080311 Firefox/2.0.0.13');
 

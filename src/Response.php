@@ -6,7 +6,7 @@ use \mmaurice\qurl\classes\Curl;
 use \mmaurice\qurl\classes\Storage;
 use \mmaurice\qurl\Request;
 
-Class Response extends \mmaurice\qurl\classes\Basic
+class Response extends \mmaurice\qurl\classes\Basic
 {
     protected $request;
 

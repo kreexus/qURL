@@ -5,7 +5,7 @@ namespace mmaurice\qurl\classes;
 use \CurlFile;
 use \Exception;
 
-Class Curl
+class Curl
 {
     protected $curlHandle;
     protected $content;
@@ -93,7 +93,7 @@ Class Curl
 
         if (is_file($file)) {
             if (!class_exists('\\CURLFile')) {
-                throw new Exception("Class 'CURLFile' is not available!");
+                throw new Exception("class 'CURLFile' is not available!");
             }
 
             return new CurlFile($file);

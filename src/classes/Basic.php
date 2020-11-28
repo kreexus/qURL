@@ -2,7 +2,7 @@
 
 namespace mmaurice\qurl\classes;
 
-Class Basic
+class Basic
 {
     protected $curl;
 

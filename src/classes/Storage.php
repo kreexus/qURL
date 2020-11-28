@@ -2,7 +2,7 @@
 
 namespace mmaurice\qurl\classes;
 
-Class Storage
+abstract class Storage
 {
     protected $storage;
 

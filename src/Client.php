@@ -6,7 +6,7 @@ use \mmaurice\qurl\classes\Curl;
 use \mmaurice\qurl\classes\Storage;
 use \mmaurice\qurl\Request;
 
-Class Client extends \mmaurice\qurl\classes\Basic
+class Client extends \mmaurice\qurl\classes\Basic
 {
     public function __construct(array $options = [])
     {
